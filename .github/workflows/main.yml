@@ -1,0 +1,45 @@
+name: Release
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      # 1. Setup Aftman (Tool Manager) to get Rojo, Wally, DarkLua
+      - name: Setup Aftman
+        uses: ok-nick/setup-aftman@v0.4.2
+
+      # 2. Build for Roblox Studio (.rbxm)
+      - name: Build Model
+        run: rojo build -o snowlib.rbxm 
+
+      # 3. Bundle for Loadstring (One single file)
+      - name: Bundle for Loadstring
+        run: darklua process src/init.lua snowlib-bundled.lua
+
+      # 4. Upload Assets to GitHub Release
+      - name: Upload Release Assets
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            snowlib.rbxm
+            snowlib-bundled.lua
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # 5. Publish to Wally
+      #- name: Publish to Wally
+      #  env:
+      #    WALLY_AUTH_TOKEN: ${{ secrets.WALLY_AUTH_TOKEN }}
+      #  run: |
+      #    mkdir -p ~/.wally
+      #    echo "$WALLY_AUTH_TOKEN" > ~/.wally/auth.toml
+      #    wally publish

@@ -1,0 +1,21 @@
+{
+  "generator": "readable",
+
+  "bundle": {
+    "require_mode": {
+      "name": "path",
+
+      "sources": {
+        "@self": "./src"
+      }
+    }
+  },
+  
+  "rules": [
+    {
+      "rule": "convert_require",
+      "current": "path",
+      "target": "roblox"
+    }
+  ]
+}
