@@ -8,9 +8,9 @@
 [![WALLY](https://img.shields.io/badge/wally-lightblue?style=for-the-badge)](#wally)
 [![MODEL](https://img.shields.io/badge/model-lightcyan?style=for-the-badge)](#model)
 [![RBXM](https://img.shields.io/badge/RBXM-snow?style=for-the-badge)](https://github.com/Blukezz/snowlb/releases/latest)
-<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" height="28" width="200">
+⁥ ⁥ ⁥ ⁥ ⁥ ⁥ ⁥ ⁥ ⁥ ⁥ ⁥ ⁥ ⁥ ⁥⁥⁥⁥ ⁥ ⁥ ⁥ ⁥ ⁥ ⁥ ⁥ ⁥ ⁥ ⁥ ⁥ ⁥ ⁥⁥⁥⁥ ⁥ ⁥ ⁥⁥⁥⁥⁥⁥⁥⁥
 ![VERSION](https://img.shields.io/github/v/release/Blukezz/snowlib?style=for-the-badge&color=lightskyblue)
-<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" height="28" width="20">
+⁥ ⁥ ⁥ ⁥ ⁥ ⁥⁥⁥⁥
 [![DISCORD](https://img.shields.io/badge/Discord-powderblue.svg?&logo=discord&logoColor=black&style=for-the-badge)](https://discord.gg/Byq78say2g)
 
 
@@ -155,15 +155,15 @@ AnimationExample:Play()
 
 ## Additive
 
+planning on adding info here later
+
 ## Blending
+
+planning on adding info here later
 
 ## Loadstring
 
-Meant to used in a executor.
-
-```lua
-local snowlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Blukezz/snowlib/refs/heads/main/build/.lua"))()
-```
+nothign here yet
 
 ## Wally
 
