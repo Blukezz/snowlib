@@ -14,7 +14,7 @@
 [![DISCORD](https://img.shields.io/badge/Discord-powderblue.svg?&logo=discord&logoColor=black&style=for-the-badge)](https://discord.gg/Byq78say2g)
 
 
-snowlib is a flexible CFrame animation library that supports both **classic procedural animations** and **modern-era keyframe animation and its tools**. Under one clean [TweenService](https://create.roblox.com/docs/reference/engine/classes/TweenService) inspired API but with the power of raw math.
+snowlib is a flexible CFrame animation library that supports both **classic procedural animations** and **modern keyframe animation and its tools**. Under one clean [TweenService](https://create.roblox.com/docs/reference/engine/classes/TweenService) inspired API but with the flexibility of a pure lerp() function.
 
 ## Key Features
 
